@@ -83,6 +83,8 @@ p {
 
 /****** Fonctionnement *******/
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
   padding: 48px 20px 68px 20px;
   margin: auto;
   align-items: flex-start;
