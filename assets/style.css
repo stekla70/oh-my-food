@@ -92,6 +92,9 @@ p {
   align-self: stretch;
   padding: 50px 0 50px 0;
 }
+.fonctionnement .card {
+  display: flex;
+}
 
 .fonctionnement-cards {
   display: flex;
@@ -152,7 +155,6 @@ p {
 }
 
 .restaurants-cards .fa-heart {
-  position: absolute;
   right: 25px;
   bottom: 33px;
 }
