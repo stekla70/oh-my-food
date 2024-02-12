@@ -52,8 +52,8 @@ p {
 }
 
 .card {
-  width: 50%;
-  height: 250px;
+  width: 100%;
+  height: 50px;
 }
 
 .card .card-img {
@@ -91,9 +91,18 @@ p {
   gap: 25px;
   align-self: stretch;
   padding: 50px 0 50px 0;
-  & .card {
+  & ol {
     display: flex;
+    flex-direction: column;
+    width: 100%;
   }
+  & .card {
+    display: flex;  
+    & .icon {
+      width: 20px;
+    }
+}
+
 }
 
 .fonctionnement-cards {
@@ -108,7 +117,7 @@ p {
 }
 
 .fonctionnement cards {
-  width: 30%;
+  width: 90%;
   background: #f4f4f4;
 }
 
