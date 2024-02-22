@@ -25,11 +25,22 @@ body {
 
 .search {
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+  background-color: #cecece;
+  border-style: solid;
+  border-bottom: #9356dc;
+  border-top: #f4f4f4;
+}
+.search h2 {
+  font-size: 16px;
+  padding-left: 3%;
 }
 
 .accueil {
-  height: 250px;
+  height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -85,12 +96,11 @@ p {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 48px 20px 68px 20px;
   margin: auto;
   align-items: flex-start;
   gap: 25px;
   align-self: stretch;
-  padding: 50px 0 50px 0;
+  padding-left: 2%;
 }
 .fonctionnement ol {
   display: flex;
@@ -102,6 +112,12 @@ p {
 }
 .fonctionnement .card .icon {
   width: 20px;
+}
+
+.number {
+  border-radius: 50%;
+  border-color: #9356dc;
+  padding-right: 1%;
 }
 
 .fonctionnement-cards {
