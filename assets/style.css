@@ -10,10 +10,16 @@ body {
   padding: 0;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .header-logo {
   justify-content: center;
   display: flex;
-  font-style: italic;
+  width: 200px;
+  height: 40px;
 }
 
 #logo {
@@ -30,11 +36,9 @@ body {
   text-align: center;
   margin-top: 5%;
   background-color: #cecece;
-  border-style: solid;
-  border-bottom: #9356dc;
-  border-top: #f4f4f4;
 }
-.search h2 {
+
+h2 {
   font-size: 16px;
   padding-left: 3%;
 }
@@ -63,15 +67,26 @@ p {
 
 .card {
   width: 100%;
-  height: 50px;
+  height: 100%;
+  margin-bottom: 15px;
 }
 
-.card .card-img {
+.card-img {
   width: 100%;
-  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.card-img .nouveau {
+  position: absolute;
+  left: 70%;
+  top: 5%;
+  color: green;
+  background-color: #99E2D0;
+  padding: 2px;
+  width: 60px;
+  text-align: center;
 }
 
 /****** Accueil *******/
@@ -106,6 +121,8 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .fonctionnement .card {
   display: flex;
@@ -116,8 +133,15 @@ p {
 
 .number {
   border-radius: 50%;
-  border-color: #9356dc;
   padding-right: 1%;
+  background-color: #9356dc;
+  width: 35px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: -10px;
+  margin-right: 2%;
 }
 
 .fonctionnement-cards {
@@ -131,7 +155,7 @@ p {
   justify-content: flex-start;
 }
 
-.fonctionnement cards {
+.fonctionnement .card {
   width: 90%;
   background: #f4f4f4;
 }
@@ -156,10 +180,17 @@ p {
   margin-bottom: 25px;
 }
 
+.liste-restos,
+li {
+  list-style-type: none;
+}
+
 .restaurants-cards {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 25px;
+  width: 100%;
+  height: 45px;
 }
 
 .restaurants-cards card {
@@ -173,20 +204,18 @@ p {
 .restaurants-cards img {
   width: 100%;
   height: 160px;
+  gap: 20px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
-.restaurants-cards .fa-heart {
+.card-icons .fa-heart {
   right: 25px;
+  top: 50px;
   bottom: 33px;
-}
-
-.restaurants-cards .fa-regular {
-  opacity: 1;
-  z-index: 2;
-  transition: all 200ms ease-in-out 100ms;
+  position: absolute;
+  color: black;
 }
 
 .fa-regular:hover {
