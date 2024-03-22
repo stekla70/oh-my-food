@@ -40,7 +40,10 @@ header {
 
 h2 {
   font-size: 16px;
-  padding-left: 3%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .accueil {
@@ -50,25 +53,31 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #f4f4f4;
+  padding-bottom: 20px;
+}
+.accueil p {
+  margin: 25px;
+  font-size: 14px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }
 
 h1 {
   display: flex;
   text-align: center;
-  margin: 0px 50px 0px 50px;
+  margin: 20px 50px 0px 50px;
   font-size: 20px;
   font-weight: 800;
-}
-
-p {
-  margin: 0;
-  font-size: 14px;
 }
 
 .card {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
+  box-shadow: 2px 1px 4px 0px #cecece;
+  border-radius: 5%;
 }
 
 .card-img {
@@ -81,12 +90,17 @@ p {
 .card-img .nouveau {
   position: absolute;
   left: 70%;
-  top: 5%;
+  top: 3%;
   color: green;
   background-color: #99E2D0;
   padding: 2px;
   width: 60px;
   text-align: center;
+  margin: 0;
+}
+.card-img .empty .full {
+  position: absolute;
+  left: 70%;
 }
 
 /****** Accueil *******/
@@ -210,14 +224,38 @@ li {
   border-radius: 15px 15px 0 0;
 }
 
-.card-icons .fa-heart {
-  right: 25px;
-  top: 50px;
-  bottom: 33px;
-  position: absolute;
-  color: black;
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
 }
 
-.fa-regular:hover {
+.card-text {
+  width: 80%;
+}
+
+.card-icons {
+  position: relative;
+}
+.card-icons .empty {
+  position: absolute;
+  z-index: 3;
+  color: black;
+  font-size: 20px;
+  background-color: #fff;
+  opacity: 1;
+}
+.card-icons .empty:hover {
   opacity: 0;
+  transition: 250ms;
+}
+.card-icons .full {
+  z-index: 2;
+  background: linear-gradient(#FF79DA, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
