@@ -1,4 +1,5 @@
 @use "./colors";
+@use "./pages";
 
 /**** Texte & background (bg) *****/
 * {
@@ -43,10 +44,11 @@ header {
 
 h2 {
   font-size: 16px;
+  margin: 0;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .accueil {
@@ -110,7 +112,7 @@ h1 {
 }
 
 /****** Accueil *******/
-.accueil button {
+button {
   flex-direction: row;
   margin: 20px 0px;
   padding: 15px;
@@ -220,9 +222,8 @@ li {
 .restaurants-cards card {
   background: #fff;
   border-radius: 15px 15px 15px 15px;
-  height: 251px;
-  position: relative;
-  width: 490px;
+  height: 100%;
+  width: 100%;
 }
 
 .restaurants-cards img {
@@ -242,23 +243,29 @@ li {
 }
 
 .card-text {
-  width: 80%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 15px 0px;
 }
 
 .card-icons {
   position: relative;
+  padding: 15px;
 
   & .empty {
     position: absolute;
     z-index: 3;
     color: black;
     font-size: 20px;
-    background-color: #fff;
     opacity: 1;
+    background-color: #fff;
 
     &:hover {
       opacity: 0;
-      transition: 250ms;
+      transition: 200ms;
     }
   }
 
@@ -266,6 +273,7 @@ li {
     z-index: 2;
     background: linear-gradient(colors.$rose, colors.$violet);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     font-size: 20px;
   }

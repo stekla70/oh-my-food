@@ -29,6 +29,114 @@ header {
   font-weight: bold;
 }
 
+.titre-resto h1 {
+  display: flex;
+  text-align: center;
+  margin: 20px 50px 0px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.titre-resto h2 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.photo-resto {
+  width: 100%;
+  height: 270px;
+}
+.photo-resto img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.palette {
+  background-color: #cecece;
+  border-radius: 20px;
+  margin-top: -50px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.card-palette {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.card-palette p {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette .card-icons {
+  position: relative;
+  padding: 15px;
+}
+.palette .card-icons .empty {
+  position: absolute;
+  z-index: 3;
+  color: black;
+  font-size: 20px;
+  opacity: 1;
+  background-color: #cecece;
+}
+.palette .card-icons .empty:hover {
+  opacity: 0;
+  transition: 200ms;
+}
+.palette .card-icons .full {
+  z-index: 2;
+  background: linear-gradient(#FF79DA, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+}
+
+.titre-resto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+/**** Texte & background (bg) *****/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/***** Small devices (phones, less than 768px) ****/
+/**** Texte & background (bg) *****/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 40px;
+}
+
+#logo {
+  max-width: 100%;
+  font-size: 24px;
+  justify-content: center;
+  font-weight: bold;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -40,6 +148,7 @@ header {
 
 h2 {
   font-size: 16px;
+  margin: 0;
 }
 
 a {
@@ -104,7 +213,7 @@ h1 {
 }
 
 /****** Accueil *******/
-.accueil button {
+button {
   flex-direction: row;
   margin: 20px 0px;
   padding: 15px;
@@ -210,9 +319,8 @@ li {
 .restaurants-cards card {
   background: #fff;
   border-radius: 15px 15px 15px 15px;
-  height: 251px;
-  position: relative;
-  width: 490px;
+  height: 100%;
+  width: 100%;
 }
 
 .restaurants-cards img {
@@ -233,29 +341,35 @@ li {
 }
 
 .card-text {
-  width: 80%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 15px 0px;
 }
 
 .card-icons {
   position: relative;
+  padding: 15px;
 }
 .card-icons .empty {
   position: absolute;
   z-index: 3;
   color: black;
   font-size: 20px;
-  background-color: #fff;
   opacity: 1;
+  background-color: #fff;
 }
 .card-icons .empty:hover {
   opacity: 0;
-  transition: 250ms;
+  transition: 200ms;
 }
 .card-icons .full {
   z-index: 2;
   background: linear-gradient(#FF79DA, #9356dc);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   color: transparent;
   font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
