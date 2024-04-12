@@ -106,7 +106,7 @@ header {
 .card-info .prix {
   width: 10%;
   margin-right: 10px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .palette .card-icons {
@@ -141,6 +141,23 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+}
+
+button {
+  flex-direction: row;
+  margin: 20px 0px;
+  padding: 15px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  border: #ff79da;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 /**** Texte & background (bg) *****/
