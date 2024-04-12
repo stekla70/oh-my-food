@@ -39,7 +39,8 @@ header {
   justify-content: center;
   text-align: center;
   margin-top: 5%;
-  background-color: colors.$gris;
+  background-color: colors.$bg;
+  box-shadow: 10px 10px;
 }
 
 h2 {
@@ -63,7 +64,7 @@ a {
 
   p {
     margin: 25px;
-    font-size: 14px;
+    font-size: 18px;
     justify-content: center;
     display: flex;
     text-align: center;
