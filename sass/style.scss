@@ -46,13 +46,11 @@ header {
   margin-top: 5%;
   background-color: #dfdcdc;
   box-shadow: 2px 1px 6px 0px;
-  margin-bottom: 5%;
-  padding: 2%;
 }
 
 h2 {
   font-size: 16px;
-  margin: 0;
+  margin: 15px;
 }
 
 a {
@@ -60,7 +58,7 @@ a {
 }
 
 .accueil {
-  height: 200px;
+  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -68,10 +66,11 @@ a {
   align-items: center;
   background: colors.$bg;
   padding-bottom: 20px;
+  margin-top: 25px;
 
   p {
     margin: 25px;
-    font-size: 18px;
+    font-size: 20px;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -82,7 +81,7 @@ h1 {
   display: flex;
   text-align: center;
   margin: 20px 50px 0px 50px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
 }
 
@@ -120,7 +119,7 @@ h1 {
 }
 
 /****** Accueil *******/
-button {
+.button {
   flex-direction: row;
   margin: 20px 0px;
   padding: 15px;
@@ -135,6 +134,12 @@ button {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+
+  &:hover {
+    background-color: #ff79da;
+    opacity: 0.8;
+    transition: 0.7s;
+  }
 }
 
 /****** Fonctionnement *******/
@@ -147,6 +152,9 @@ button {
   align-self: stretch;
   padding-left: 2%;
 
+  h2 {
+    font-size: 28px;
+  }
 
   & ol {
     display: flex;
@@ -209,9 +217,15 @@ button {
   padding: 55px 20px 65px 20px;
 }
 
-.restaurants h1 {
-  margin: 0;
-  margin-bottom: 25px;
+.restaurants {
+  h1 {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
 }
 
 .liste-restos,
