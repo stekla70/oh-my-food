@@ -160,6 +160,18 @@ button {
   text-decoration: none;
 }
 
+@keyframes disappear {
+  0% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 /**** Texte & background (bg) *****/
 * {
   font-family: "Roboto", sans-serif;
@@ -171,6 +183,34 @@ body {
   margin: 0;
   padding: 0;
   height: auto;
+}
+
+.loader-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3000;
+  background: white;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+  animation: disappear 2s linear forwards;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 
 main {
@@ -360,14 +400,6 @@ h1 {
 }
 
 /****** Restaurants *******/
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px; /* Safari */
-  animation: spin 2s linear infinite;
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -468,40 +500,33 @@ li {
   height: 190px;
   padding: 20px 0px 10px 0px;
   bottom: 0;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  gap: 50px;
+  flex-direction: column;
   background-color: #353535;
   color: #fff;
-  margin-left: 15px;
-  gap: 2px;
-}
-
-.footer-container {
-  width: 150px;
-  height: 50px;
-  margin-left: 0;
 }
 
 .footer-logo {
-  color: #fff;
-  font-size: 20px;
-  width: 150px;
-  height: 50px;
+  padding: 0px 20px;
 }
 
+.footer-liens {
+  padding-left: 20px;
+  line-height: 5%;
+}
 .footer-liens li {
   display: flex;
+  gap: 10px;
   align-items: center;
-  width: 200px;
 }
 .footer-liens li p {
-  padding-left: 10px;
-  margin: 0;
+  color: #fff;
+  font-weight: 300;
 }
 
 .icon-white {
   color: #fff;
   padding-right: 5px;
   padding-left: 5px;
+  height: 14px;
+  width: 14px;
 }/*# sourceMappingURL=style.css.map */
