@@ -35,7 +35,7 @@ body {
   width: 100%;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 55%;
   z-index: 3000;
   background: white;
   opacity: 0.8;
@@ -354,6 +354,14 @@ li {
       transition: 200ms;
     }
   }
+
+  
+&.check {
+  <img src="coche-verte.png" alt="coche">
+  opacity: 0.8;
+  transition: 0.7s;
+}
+
 
   & .full {
     z-index: 2;
