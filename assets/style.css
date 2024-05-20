@@ -67,6 +67,32 @@ header {
   padding: 0;
 }
 
+.coche {
+  display: block;
+  position: absolute;
+  left: 100%;
+  height: 100%;
+  width: 50px;
+  border-radius: 16px;
+  background-color: #99E2D0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.coche i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px;
+  width: 10 px;
+  height: 10px;
+  padding: 10px;
+  background-color: white;
+}
+.coche .fa-check {
+  color: #99E2D0;
+  font-size: 16px;
+}
+
 .card-restos {
   background-color: white;
   border-radius: 16px;
@@ -82,6 +108,11 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0;
+}
+.card-restos:hover span {
+  opacity: 1;
+  transform: translateX(-60px);
+  transition: all 0.3s ease-in-out;
 }
 
 .card-info {
@@ -190,7 +221,7 @@ body {
   width: 100%;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 55%;
   z-index: 3000;
   background: white;
   opacity: 0.8;
@@ -204,7 +235,7 @@ body {
   align-items: center;
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 30%;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #3498db;
@@ -532,12 +563,18 @@ li {
 }
 
 /* mediaqueries */
-@media (min-width: 600px) {
-  .footer {
+@media screen and (min-width: 600px) {
+  footer {
     font-size: 20px;
     margin-left: 20px;
   }
   .footer-img {
     font-size: 110%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer .accueil .fonctionnement {
+    font-size: 22px;
+    margin-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -5,11 +5,9 @@
   0% {
     opacity: 0.6;
   }
-
   90% {
     opacity: 0.3;
   }
-
   100% {
     opacity: 0;
     z-index: -1;
@@ -259,7 +257,6 @@ h1 {
   0% {
     -webkit-transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -269,7 +266,6 @@ h1 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -340,7 +336,6 @@ li {
 .card-icons {
   position: relative;
   padding: 15px;
-
   & .empty {
     position: absolute;
     z-index: 3;
@@ -348,20 +343,11 @@ li {
     font-size: 20px;
     opacity: 1;
     background-color: #fff;
-
     &:hover {
       opacity: 0;
       transition: 200ms;
     }
   }
-
-  
-&.check {
-  <img src="coche-verte.png" alt="coche">
-  opacity: 0.8;
-  transition: 0.7s;
-}
-
 
   & .full {
     z-index: 2;
@@ -373,58 +359,59 @@ li {
   }
 }
 
-.footer {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  height: 190px;
-  padding: 20px 0px 10px 0px;
-  bottom: 0;
-  flex-direction: column;
-  background-color: colors.$anthracite;
-  color: #fff;
-}
-
-.footer-logo {
-  padding: 0px 20px;
-}
-
-.footer-liens {
-  padding-left: 20px;
-  line-height: 5%;
-
-  li {
+  .footer {
     display: flex;
-    gap: 10px;
-    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 190px;
+    padding: 20px 0px 10px 0px;
+    bottom: 0;
+    flex-direction: column;
+    background-color: colors.$anthracite;
+    color: #fff;
+  }
 
-    p {
-      color: #fff;
-      font-weight: 300;
+  .footer-logo {
+    padding: 0px 20px;
+  }
+
+  .footer-liens {
+    padding-left: 20px;
+    line-height: 5%;
+
+    li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      p {
+        color: #fff;
+        font-weight: 300;
+      }
     }
   }
-}
 
-.icon-white {
-  color: #fff;
-  padding-right: 5px;
-  padding-left: 5px;
-  height: 14px;
-  width: 14px;
-}
-
-/* mediaqueries */
-@media (min-width: 600px) {
-  .footer {
-    font-size: 20px;
-    margin-left: 20px;
+  .icon-white {
+    color: #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 14px;
+    width: 14px;
   }
 
-  .footer-img {
-    font-size: 110%;
+  /* mediaqueries */
+  @media screen and (min-width: 600px) {
+    footer {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+
+    .footer-img {
+      font-size: 110%;
+    }
   }
 
-  @media (min-width: 1000px) {
+  @media screen and (min-width: 1000px) {
     .footer .accueil .fonctionnement {
       font-size: 22px;
       margin-left: 30px;
