@@ -215,17 +215,20 @@ h1 {
   }
 }
 
+.card-number {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 30px;
+margin: 20px 40px 20px 0px; 
+padding-left: 20px;
+width: 320px;
+align-items: center;
+}
+
 .number {
-  border-radius: 50%;
-  padding-right: 1%;
-  background-color: #9356dc;
-  width: 35px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: -10px;
-  margin-right: 2%;
+  position: absolute;
+  left: 10px;
 }
 
 .fonctionnement-cards {

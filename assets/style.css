@@ -82,10 +82,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50%;
-  width: 5px;
-  height: 5px;
-  padding: 5px;
+  margin: 26px 16px 18px 20px;
+  width: 6px;
+  height: 6px;
+  padding: 6px;
   border-radius: 50%;
   background-color: white;
 }
@@ -114,6 +114,12 @@ header {
   opacity: 1;
   transform: translateX(-60px);
   transition: all 0.3s ease-in-out;
+}
+.card-restos:hover .prix {
+  opacity: 1;
+  transform: translateX(-60px);
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
 }
 
 .card-info {
@@ -395,17 +401,20 @@ h1 {
   width: 20px;
 }
 
-.number {
-  border-radius: 50%;
-  padding-right: 1%;
-  background-color: #9356dc;
-  width: 35px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
+.card-number {
   display: flex;
-  margin-top: -10px;
-  margin-right: 2%;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30px;
+  margin: 20px 40px 20px 0px;
+  padding-left: 20px;
+  width: 320px;
+  align-items: center;
+}
+
+.number {
+  position: absolute;
+  left: 10px;
 }
 
 .fonctionnement-cards {
