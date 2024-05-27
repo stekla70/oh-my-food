@@ -1,0 +1,31 @@
+$breakpoint-desktop: 1440px;
+$breakpoint-tablette: 768px;
+$fontsize-responsive: 20px;
+
+/* mediaqueries */
+@media screen and (min-width: $breakpoint-tablette) {
+
+    .fonctionnement-cards {
+        font-size: $fontsize-responsive;
+    }
+
+    .restaurants p {
+        font-size: $fontsize-responsive;
+    }
+
+    footer {
+        font-size: $fontsize-responsive;
+        margin-left: 20px;
+    }
+
+    .footer-img {
+        font-size: 110%;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .footer .accueil .fonctionnement {
+        font-size: 22px;
+        margin-left: 30px;
+    }
+}

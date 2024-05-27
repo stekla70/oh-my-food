@@ -198,6 +198,28 @@ button {
   text-decoration: none;
 }
 
+/* mediaqueries */
+@media screen and (min-width: 768px) {
+  .fonctionnement-cards {
+    font-size: 20px;
+  }
+  .restaurants p {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .footer-img {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer .accueil .fonctionnement {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+}
 @keyframes disappear {
   0% {
     opacity: 0.6;
@@ -411,6 +433,9 @@ h1 {
   width: 320px;
   align-items: center;
 }
+.card-number .icon {
+  width: 24px;
+}
 
 .number {
   position: absolute;
@@ -426,6 +451,16 @@ h1 {
   border-radius: 20px;
   margin-left: 12px;
   justify-content: flex-start;
+}
+.fonctionnement-cards .card-number {
+  align-items: start;
+}
+.fonctionnement-cards .icon {
+  margin-right: 20px;
+  width: 24px;
+}
+.fonctionnement-cards p {
+  margin: 0;
 }
 
 .fonctionnement .card {
@@ -534,6 +569,11 @@ li {
   font-size: 20px;
 }
 
+.cardnumber-text {
+  width: 195px;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   justify-content: flex-start;
@@ -570,21 +610,4 @@ li {
   padding-left: 5px;
   height: 14px;
   width: 14px;
-}
-
-/* mediaqueries */
-@media screen and (min-width: 600px) {
-  footer {
-    font-size: 20px;
-    margin-left: 20px;
-  }
-  .footer-img {
-    font-size: 110%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .footer .accueil .fonctionnement {
-    font-size: 22px;
-    margin-left: 30px;
-  }
 }/*# sourceMappingURL=style.css.map */
