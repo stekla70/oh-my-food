@@ -27,5 +27,16 @@ $fontsize-responsive: 20px;
     .footer .accueil .fonctionnement {
         font-size: 22px;
         margin-left: 30px;
+        width: 100%;
+    }
+
+    .card-number {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .fonctionnement {
+        display: flex;
+        flex-direction: row;
     }
 }

@@ -128,14 +128,24 @@ h1 {
   margin: 20px 50px 0px 50px;
   font-size: 24px;
   font-weight: 800;
+  @media screen and (min-width: 1000px) {
+    font-size: 40px;
+    gap: 30px;
+  }
 }
 
 .card {
-  width: 100%;
+  width: 400px;
   height: 100%;
   margin-bottom: 15px;
   box-shadow: 2px 1px 4px 0px colors.$gris;
   border-radius: 5%;
+  @media screen and (min-width: 1000px) {
+    width: 420px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 640px;
+  }
 }
 
 .card-img {
@@ -207,6 +217,13 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: 1440px) {
+      flex-direction: row;
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+    }
   }
 
   & .card {
@@ -227,6 +244,9 @@ h1 {
   padding-left: 20px;
   width: 320px;
   align-items: center;
+  @media screen and (min-width: 1440px) {
+    width: 420px;
+  }
 
   & .icon {
     width: 24px;
@@ -236,11 +256,14 @@ h1 {
 .number {
   position: absolute;
   left: 10px;
+  @media screen and (min-width: 1000px) {
+    position: unset;
+    margin-right: 10px;
+  }
 }
 
 .fonctionnement-cards {
   display: flex;
-  flex-direction: row;
   width: 100%;
   gap: 25px;
   align-items: center;
@@ -259,6 +282,10 @@ h1 {
 
   p {
     margin: 0;
+    font-size: 18px;
+    @media screen and (min-width: 1440px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -324,6 +351,14 @@ li {
   flex-direction: column;
   gap: 25px;
   width: 100%;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
 }
 
 .restaurants-cards card {
@@ -389,7 +424,11 @@ li {
 .cardnumber-text {
   width: 195px;
   align-items: center;
+@media screen and (min-width: 1440px) {
+  width: 250px;
 }
+}
+
 
 .footer {
   display: flex;

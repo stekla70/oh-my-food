@@ -218,6 +218,16 @@ button {
   .footer .accueil .fonctionnement {
     font-size: 22px;
     margin-left: 30px;
+    width: 100%;
+  }
+  .card-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
   }
 }
 @keyframes disappear {
@@ -341,13 +351,29 @@ h1 {
   font-size: 24px;
   font-weight: 800;
 }
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 40px;
+    gap: 30px;
+  }
+}
 
 .card {
-  width: 100%;
+  width: 400px;
   height: 100%;
   margin-bottom: 15px;
   box-shadow: 2px 1px 4px 0px #cecece;
   border-radius: 5%;
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 640px;
+  }
 }
 
 .card-img {
@@ -416,6 +442,17 @@ h1 {
   margin: 0;
   padding: 0;
 }
+@media screen and (min-width: 1440px) {
+  .fonctionnement ol {
+    flex-direction: row;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .fonctionnement ol {
+    flex-direction: row;
+  }
+}
 .fonctionnement .card {
   display: flex;
 }
@@ -433,6 +470,11 @@ h1 {
   width: 320px;
   align-items: center;
 }
+@media screen and (min-width: 1440px) {
+  .card-number {
+    width: 420px;
+  }
+}
 .card-number .icon {
   width: 24px;
 }
@@ -441,10 +483,15 @@ h1 {
   position: absolute;
   left: 10px;
 }
+@media screen and (min-width: 1000px) {
+  .number {
+    position: unset;
+    margin-right: 10px;
+  }
+}
 
 .fonctionnement-cards {
   display: flex;
-  flex-direction: row;
   width: 100%;
   gap: 25px;
   align-items: center;
@@ -461,6 +508,12 @@ h1 {
 }
 .fonctionnement-cards p {
   margin: 0;
+  font-size: 18px;
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement-cards p {
+    font-size: 24px;
+  }
 }
 
 .fonctionnement .card {
@@ -509,6 +562,14 @@ li {
   flex-direction: column;
   gap: 25px;
   width: 100%;
+}
+.restaurants-cards ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .restaurants-cards card {
@@ -572,6 +633,11 @@ li {
 .cardnumber-text {
   width: 195px;
   align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .cardnumber-text {
+    width: 250px;
+  }
 }
 
 .footer {
