@@ -1,3 +1,23 @@
+@keyframes show-menu {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes show-menu {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 /**** Texte & background (bg) *****/
 * {
   font-family: "Roboto", sans-serif;
@@ -85,6 +105,9 @@ header {
   padding: 0;
 }
 
+.entrees-plats-desserts {
+  width: 100%;
+}
 @media screen and (min-width: 1000px) {
   .entrees-plats-desserts {
     width: 70%;
@@ -139,6 +162,12 @@ header {
   transform: translateX(-60px);
   transition: all 0.3s ease-in-out;
 }
+.card-restos:hover h3, .card-restos:hover p {
+  width: 60%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .card-restos:hover .prix {
   opacity: 1;
   transform: translateX(-60px);
@@ -152,6 +181,21 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.delay-1 {
+  transform-origin: right;
+  animation: show-menu 500ms 1000ms forwards;
+}
+
+.delay-2 {
+  transform-origin: right;
+  animation: show-menu 500ms 1500ms forwards;
+}
+
+.delay-3 {
+  transform-origin: right;
+  animation: show-menu 500ms 2000ms forwards;
 }
 
 .titres-plats {
@@ -173,11 +217,11 @@ header {
   font-weight: bold;
 }
 
-.palette .card-icons {
+.card-icons {
   position: relative;
   padding: 15px;
 }
-.palette .card-icons .empty {
+.card-icons .empty {
   position: absolute;
   z-index: 3;
   color: black;
@@ -185,11 +229,11 @@ header {
   opacity: 1;
   background-color: #f4f4f4;
 }
-.palette .card-icons .empty:hover {
+.card-icons .empty:hover {
   opacity: 0;
   transition: 200ms;
 }
-.palette .card-icons .full {
+.card-icons .full {
   z-index: 2;
   background: linear-gradient(#FF79DA, #9356dc);
   background-clip: text;
